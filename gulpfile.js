@@ -149,13 +149,13 @@ gulp.task('js', function () {
     .pipe(gulp.dest(dirs.build + '/js'));
 });
 
-// gulp.task('js:copy:picturefill', function () {
-//   return gulp.src([
-//     // список обрабатываемых файлов
-//     dirs.source + '/js/picturefill.min.js',
-//   ])
-//     .pipe(gulp.dest(dirs.build + '/js'));
-// });
+gulp.task('js:copy:picturefill', function () {
+  return gulp.src([
+    // список обрабатываемых файлов
+    dirs.source + '/js/picturefill.min.js',
+  ])
+    .pipe(gulp.dest(dirs.build + '/js'));
+});
 
 // ЗАДАЧА: Кодирование в base64 шрифта в формате WOFF
 gulp.task('css:fonts:woff', function (callback) {
@@ -206,7 +206,7 @@ gulp.task('css:fonts:woff2', function (callback) {
 gulp.task('build', gulp.series(                             // последовательно:
   'clean',                                                  // последовательно: очистку папки сборки
   'svgstore',
-  gulp.parallel('sass', 'img', 'js', 'copy:fonts'),
+  gulp.parallel('sass', 'img', 'js', 'js:copy:picturefill', 'copy:fonts'),
   'html'                                                    // последовательно: сборку разметки
 ));
 
