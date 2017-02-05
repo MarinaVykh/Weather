@@ -1,0 +1,51 @@
+.page-header {
+  width: 100%;
+  background-color: #242424;
+
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  height: 45px;
+  margin: 0 auto;
+
+}
+
+.page-header__logo {
+
+}
+
+.page-header__user-items {
+  font-size: 0;
+  line-height: 25px;
+  font-weight: normal;
+
+}
+
+.page-header__user-item {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 11px;
+
+}
+
+.page-header__user-search {
+  color: #7e7e7e;
+
+}
+
+.page-header__user-login {
+  width: 140px;
+  color: #7e7e7e;
+
+}
+
+.page-header__user-login--not-uppercase {
+  text-transform: none;
+
+}

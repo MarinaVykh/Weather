@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fooseshoes</title>
-  <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
   <div class="page-header__wrapper">
     <div class="page-header__logo">
       <a class="page-header__logo-link" href="index.html">
-        <img src="#" width="156" height="20" alt="Fooseshoes">
+        <img src="img/logo@1x.png" width="156" height="20" alt="Fooseshoes">
       </a>
     </div>
 
@@ -24,7 +24,8 @@
       </li>
 
       <li class="page-header__user-item">
-        <a class="page-header__user-login" href="#" title="Login or Register">Login or Register"</a>
+        <a class="page-header__user-login" href="#" title="Login or Register">Login <span
+          class="page-header__user-login  page-header__user-login--not-uppercase">or</span> Register</a>
       </li>
     </ul>
   </div>
@@ -41,12 +42,11 @@
       </ul>
 
       <ul class="main-nav__info-items">
-        <li class="main-nav__info-item"><a class="main-nav__info-points" href="#"></a></li>
-        <li class="main-nav__info-item"><a class="main-nav__info-basket" href="#"></a></li>
+        <li class="main-nav__info-item"><a class="main-nav__info-wishlist" href="#">Wishlist</a></li>
+        <li class="main-nav__info-item"><a class="main-nav__info-basket" href="#">My Basket</a></li>
       </ul>
     </div>
   </nav>
-
 </header>
 
 <main class="page-main">
@@ -55,7 +55,7 @@
       <div class="slider__picture-info-wrapper">
         <div class="cost">$145,99</div>
 
-        <h1 class="slider__picture-title">Pink Shoes 2013 Collection</h1>
+        <h1 class="slider__picture-title">Pink Shoes<br> 2013 Collection</h1>
 
         <p class="slider__picture-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto doloremque
           ea explicabo iste magni, porro possimus rem temporibus voluptatibus.
@@ -72,44 +72,66 @@
 
     <div class="slider__pagination">
       <ul class="slider__pagination-items">
-        <li class="slider__pagination-item  slider__pagination-item-active"><a href="#">Pink Shoes</a></li>
-        <li class="slider__pagination-item"><a href="#">Anna Field</a></li>
-        <li class="slider__pagination-item"><a href="#">Prada</a></li>
-        <li class="slider__pagination-item"><a href="#">Casadei</a></li>
-        <li class="slider__pagination-item"><a href="#">Mellow Yellow</a></li>
+        <li class="slider__pagination-item"><a
+          class="slider__pagination-item-link  slider__pagination-item-link--active" href="#">Pink Shoes</a></li>
+        <li class="slider__pagination-item"><a class="slider__pagination-item-link" href="#">Anna Field</a></li>
+        <li class="slider__pagination-item"><a class="slider__pagination-item-link" href="#">Prada</a></li>
+        <li class="slider__pagination-item"><a class="slider__pagination-item-link" href="#">Casadei</a></li>
+        <li class="slider__pagination-item"><a class="slider__pagination-item-link" href="#">Mellow Yellow</a></li>
       </ul>
 
       <ul class="slider__pagination-pages">
-        <li class="slider__pagination-page"><a href="#">Pink Shoes</a></li>
-        <li class="slider__pagination-page"><a href="#">Anna Field</a></li>
-        <li class="slider__pagination-page"><a href="#">Prada</a></li>
-        <li class="slider__pagination-page"><a href="#">Casadei</a></li>
-        <li class="slider__pagination-page"><a href="#">Mellow Yellow</a></li>
+        <li class="slider__pagination-page  slider__pagination-page--active">
+          <a href="#">Pink Shoes</a>
+          <span>Now af $145,99</span>
+        </li>
+
+        <li class="slider__pagination-page">
+          <a href="#">Anna Field</a>
+          <span>Limited Edition</span>
+        </li>
+
+        <li class="slider__pagination-page">
+          <a href="#">Prada</a>
+          <span>Summer is coming</span>
+        </li>
+
+        <li class="slider__pagination-page">
+          <a href="#">Casadei</a>
+          <span>All Colors avaiable</span>
+        </li>
+
+        <li class="slider__pagination-page">
+          <a href="#">Mellow Yellow</a>
+          <span>Free delivery</span>
+        </li>
       </ul>
     </div>
   </div>
 
   <section class="offers">
     <div class="offers__items">
-      <div class="offers__item">
-        <a href="" class="offers__item  offers__item--1">On Sale</a>
+      <div class="offers__item  offers__item--1">
+        <a href="" class="">On Sale</a>
       </div>
 
-      <div class="offers__item">
-        <a href="" class="offers__item  offers__item--2">Special Offers</a>
+      <div class="offers__item  offers__item--2">
+        <a href="" class="">Special Offers</a>
       </div>
 
-      <div class="offers__item">
-        <a href="" class="offers__item  offers__item--3">Must Have</a>
+      <div class="offers__item  offers__item--3">
+        <a href="" class="">Must Have</a>
       </div>
     </div>
   </section>
 
   <section class="catalog">
     <div class="catalog__new">
-      <h2 class="catalog__title">New arrivals on FooseShoes</h2>
+      <div class="catalog__new-header-wrapper">
+        <h2 class="catalog__title">New arrivals on FooseShoes</h2>
 
-      <a class="catalog__show-all" href="#">Show All</a>
+        <a class="catalog__show-all" href="#">Show All</a>
+      </div>
 
       <div class="catalog__new-items">
         <div class="catalog__new-item">
@@ -160,9 +182,11 @@
     </div>
 
     <div class="catalog__best-sellers">
-      <h2 class="catalog__title">Best sellers of the month</h2>
+      <div class="catalog__best-sellers-header-wrapper">
+        <h2 class="catalog__title">Best sellers of the month</h2>
 
-      <a class="catalog__show-all" href="#">Show All</a>
+        <a class="catalog__show-all" href="#">Show All</a>
+      </div>
 
       <div class="catalog__best-sellers-items">
         <div class="catalog__best-sellers-item">
@@ -213,7 +237,7 @@
     </div>
   </section>
 
-  <div class="page-main__info">
+  <div class="page-main__info  page-main__info--border">
     <div class="delivery">
       <span class="delivery__title">Free Shipping</span>
       <p class="delivery__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
