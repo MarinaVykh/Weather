@@ -17,8 +17,34 @@
 .slider__picture-info-wrapper {
   width: 400px;
   margin-left: 1000px;
+  padding-top: 70px;
 
 }
+
+.slider__picture-cost {
+
+}
+
+.slider__picture-title {
+  margin: 0;
+  padding: 20px 0 20px 0;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: lighter;
+  color: #3d3d3c;
+
+}
+
+.slider__picture-text {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: lighter;
+  color: #3d3d3c;
+
+}
+
 
 .slider__pagination {
   background-color: #2e2e2e;
