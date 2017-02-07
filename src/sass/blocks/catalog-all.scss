@@ -1,0 +1,46 @@
+.catalog-all {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+}
+
+.catalog-all__title {
+
+}
+
+.catalog-all__products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+}
+
+.catalog-all__products-item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 270px;
+  background-color: #fff;
+
+  &:nth-child(3){
+    margin-right: 0;
+
+  }
+
+  &:nth-child(6){
+    margin-right: 0;
+
+  }
+
+  &:nth-child(9){
+    margin-right: 0;
+
+  }
+
+}
+
+.catalog-all__page-configuration {
+
+}
