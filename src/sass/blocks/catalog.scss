@@ -64,12 +64,28 @@
 
 }
 
-.catalog__new-item-1 {
+.catalog__new-item-link {
   display: block;
   height: 220px;
-  background-image: url("../img/catalog-new-item-1.png");
   background-repeat: no-repeat;
+
+}
+
+.catalog__new-item-1 {
+  background-image: url("../img/catalog-new-item-1@1x.png");
   background-position: 55% -12px;
+
+}
+
+.catalog__new-item-2 {
+  background-image: url("../img/catalog-new-item-2@1x.png");
+  background-position-x: 55%;
+
+}
+
+.catalog__new-item-3 {
+  background-image: url("../img/catalog-new-item-3@1x.png");
+  background-position: 50% -5px;
 
 }
 
