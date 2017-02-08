@@ -52,8 +52,7 @@
 
 .main-nav__info-item {
   display: inline-block;
-  padding: 18px 25px;
-  vertical-align: middle;
+  padding: 18px 25px 18px 45px;
   font-size: 16px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -61,20 +60,86 @@
 }
 
 .main-nav__info-item:first-child{
-  border: none;
+  border-right: none;
 
 }
 
 .main-nav__info-wishlist {
+  position: relative;
   display: block;
-  background-color: #adadad;
-  width: 20px;
-  height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/star.png");
+    background-repeat: no-repeat;
+    top: 8px;
+    left: -25px;
+
+  }
+
+}
+
+.main-nav__info-wishlist-hide {
+  font: 0/0 a;
   text-shadow: none;
   color: transparent;
 
 }
 
+.main-nav__info-wishlist-counter {
+  width: 20px;
+  height: 20px;
+  padding: 0px 3px 3px 3px;
+  background-color: #adadad;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 25px;
+  color: #fff;
+  align-items: center;
+
+}
+
 .main-nav__info-basket {
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/cart.png");
+    background-repeat: no-repeat;
+    top: 10px;
+    left: -25px;
+
+  }
+
+}
+
+.main-nav__info-basket-hide {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+
+}
+
+.main-nav__info-basket-counter {
+  width: 20px;
+  height: 20px;
+  padding: 0px 6px 3px 6px;
+  background-color: #57c5a0;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 25px;
+  color: #fff;
+  align-items: center;
 
 }
