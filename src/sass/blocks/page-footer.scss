@@ -16,10 +16,13 @@
 }
 
 .page-footer__copyright {
+  width: 30%;
+  padding-top: 25px;
 
 }
 
 .page-footer__copyright-title {
+  display: block;
   font-size: 12px;
   line-height: 18px;
   color: #7d7d7d;
@@ -34,7 +37,8 @@
 }
 
 .page-footer__menu-items {
-  padding: 0;
+  width: 70%;
+  padding: 32px 0 0 345px;
   font-size: 0;
   line-height: 25px;
 
@@ -42,9 +46,14 @@
 
 .page-footer__menu-item {
   display: inline-block;
-  padding: 0;
+  padding: 0 3px 0 0 ;
   vertical-align: middle;
   font-size: 12px;
+
+}
+
+.page-footer__menu-item:last-child {
+  padding-right: 0;
 
 }
 

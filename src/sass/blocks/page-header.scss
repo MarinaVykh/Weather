@@ -34,15 +34,20 @@
   font-size: 11px;
   border-right: 1px solid #383838;
 
+
 }
 
 .page-header__user-search {
   background-image: url("../img/search.png");
   background-repeat: no-repeat;
   background-size: 14px 14px;
-  //font-size: 0;
+
+  //font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
 
 }
+
 
 .page-header__user-login {
   padding: 0 20px;
