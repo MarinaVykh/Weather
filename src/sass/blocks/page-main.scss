@@ -58,12 +58,6 @@
 
 }
 
-
-
-
-
-
-
 .page-main__sort-products {
   width: 100%;
   height: 90px;
@@ -105,41 +99,23 @@
 
 }
 
+.page-main__sort-product option:hover {
+  background-color: #57c5a0;
+
+}
+
 .page-main__sort-product--brands {
-  padding-left: 50px;
 
 }
 
-.page-main__sort-product--view {
-  padding-left: 25px;
-
-  &:hover {
-    background-color: #57c5a0;
-
-  }
-
-}
 
 .page-main__sort-product--categories {
-  padding-left: 65px;
 
 }
 
 .page-main__sort-product--price {
-  padding-left: 87px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .page-main__info {
   display: flex;

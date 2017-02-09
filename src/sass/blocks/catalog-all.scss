@@ -11,7 +11,6 @@
 
 }
 
-
 .catalog-all__title {
   display: inline-block;
   margin-right: 20px;
@@ -67,6 +66,7 @@
 .catalog-all__sort {
   width: 200px;
   height: 30px;
+  padding: 0 0 5px 0;
   font-size: 14px;
   line-height: 25px;
   font-weight: bold;
@@ -75,9 +75,6 @@
   background-color: #ebe7df;
 
 }
-
-
-
 
 .catalog-all__products {
   display: flex;
@@ -200,21 +197,22 @@
 }
 
 .catalog-all__products-item-info-buttons {
-  position: absolute;
   display: none;
-
-}
-
-
-
-
-.catalog-all__products-item-info a:hover {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 30px;
 
 
 }
 
 
-.catalog-all__products-item-info a:hover .catalog-all__products-item-info-buttons {
+.catalog-all__products-item-info-name:hover {
+
+
+}
+
+.catalog-all__products-item-info-name:hover .catalog-all__products-item-info-buttons {
   display: block;
 
 }
