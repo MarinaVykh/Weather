@@ -6,8 +6,15 @@
 
 }
 
+.catalog-all__header {
+  padding: 15px 0 10px 0;
+
+}
+
+
 .catalog-all__title {
   display: inline-block;
+  margin-right: 20px;
   font-size: 25px;
   line-height: 60px;
   font-weight: lighter;
@@ -17,16 +24,15 @@
 
 .catalog-all__page-configuration {
   float: right;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  padding: 15px 2px 0 0;
 
 }
 
-//.catalog-all_view {
-//  display: inline-block;
-//
-//}
-
 .catalog-all__view-title {
-  display: inline-block;
+  margin: 0 15px 0 0;
   font-size: 14px;
   line-height: 25px;
   font-weight: bold;
@@ -35,9 +41,9 @@
 }
 
 .catalog-all__view-1 {
-  display: inline-block;
   width: 30px;
   height: 30px;
+  margin: 0 10px 0 0;
   border: 1px solid #bcb5a7;
   background-image: url("../img/sort-view-1.png");
   background-repeat: no-repeat;
@@ -47,9 +53,9 @@
 }
 
 .catalog-all__view-2 {
-  display: inline-block;
   width: 30px;
   height: 30px;
+  margin: 0 20px 0 0;
   border: 1px solid #bcb5a7;
   background-image: url("../img/sort-view-2.png");
   background-repeat: no-repeat;
@@ -59,7 +65,6 @@
 }
 
 .catalog-all__sort {
-  display: inline-block;
   width: 200px;
   height: 30px;
   font-size: 14px;
