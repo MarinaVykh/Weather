@@ -2,11 +2,67 @@
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
+  @include clearfix;
 
 }
 
 .catalog-all__title {
   display: inline-block;
+  font-size: 25px;
+  line-height: 60px;
+  font-weight: lighter;
+  color: #3d3c3b;
+
+}
+
+.catalog-all__page-configuration {
+  float: right;
+
+}
+
+.catalog-all_view {
+
+}
+
+.catalog-all__view-title {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: bold;
+  color: #bcb5a7;
+
+}
+
+.catalog-all__view-1 {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bcb5a7;
+  background-image: url("../img/sort-view-1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  font-size: 0;
+
+}
+
+.catalog-all__view-2 {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bcb5a7;
+  background-image: url("../img/sort-view-2.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  font-size: 0;
+
+}
+
+.catalog-all__sort {
+  width: 200px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: bold;
+  color: #bcb5a7;
+  border: 1px solid #bcb5a7;
+  background-color: #ebe7df;
 
 }
 
@@ -68,5 +124,5 @@
 
 .catalog-all__sort {
   display: inline-block;
-  
+
 }
