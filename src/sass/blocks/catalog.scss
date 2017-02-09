@@ -79,6 +79,26 @@
   background-image: url("../img/catalog-new-item-2@1x.png");
   background-position-x: 55%;
 
+  &:after {
+    content: 'On Sale!';
+    position: absolute;
+    display: block;
+    width: 65px;
+    height: 65px;
+    padding-top: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #242424;
+    box-sizing: border-box;
+    right: 0;
+    top: 0;
+
+  }
+
 }
 
 .catalog__new-item-3 {
@@ -117,7 +137,7 @@
 
 .catalog__best-sellers {
   width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 45px;
   padding: 0 10px;
 
 }
@@ -170,6 +190,26 @@
 .catalog__best-sellers-item-3 {
   background-image: url("../img/catalog-best-item-3@1x.png");
   background-position: 55% -12px;
+
+  &:after {
+    content: 'Out of stock';
+    position: absolute;
+    display: block;
+    width: 65px;
+    height: 65px;
+    padding-top: 16px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #f27e4b;
+    box-sizing: border-box;
+    right: 0;
+    top: 0;
+
+  }
 
 }
 
