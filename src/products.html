@@ -24,7 +24,12 @@
       </li>
 
       <li class="page-header__user-item">
-        <a class="page-header__user-login" href="#" title="Login or Register">Login or Register</a>
+        <a class="page-header__user-login" href="#" title="Login or Register">
+          Login
+          <span class="page-header__user-login  page-header__user-login--not-uppercase">
+            or
+          </span>
+          Register</a>
       </li>
     </ul>
   </div>
@@ -61,21 +66,23 @@
 </header>
 
 <main class="page-main">
-  <div class="page-main__promo">
-    <div class="page-main__promo-info-wrapper">
-      <div class="page-main__promo-cost  cost">$145,99</div>
+  <div class="page-main__promo-wrapper">
+    <div class="page-main__promo">
+      <div class="page-main__promo-info-wrapper">
+        <div class="page-main__promo-cost  cost">$145,99</div>
 
-      <h1 class="page-main__promo-title">Pink Shoes 2013 Collection</h1>
+        <h1 class="page-main__promo-title">Pink Shoes<br>2013 Collection</h1>
 
-      <p class="page-main__promo-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto doloremque
-        ea explicabo iste magni, porro possimus rem.
-      </p>
+        <p class="page-main__promo-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto doloremque
+          ea explicabo iste magni, porro possimus rem.
+        </p>
 
-      <div class="product-buttons">
-        <a class="product-button  product-button--view" href="#"></a>
-        <a class="product-button  product-button--favorite" href="#"></a>
-        <a class="product-button  product-button--share" href="#"></a>
-        <a class="product-button  product-button--basket" href="#"></a>
+        <div class="page-main__promo-product-buttons  product-buttons">
+          <a class="product-button  product-button--view" href="#"></a>
+          <a class="product-button  product-button--favorite" href="#"></a>
+          <a class="product-button  product-button--share" href="#"></a>
+          <a class="product-button  product-button--basket" href="#"></a>
+        </div>
       </div>
     </div>
   </div>
@@ -85,12 +92,16 @@
       <span class="page-main__sort-products-title">Shop by</span>
 
       <select class="page-main__sort-product  page-main__sort-product--brands" type="text">
-        <option value="Brands">Brands</option>
-        <option value="Buffalo Decollete">Buffalo Decollete</option>
-        <option value="Even$Odd">Even$Odd</option>
-        <option value="Prada">Prada</option>
-        <option value="Casadei">Casadei</option>
-        <option value="Mellow Yellow">Mellow Yellow</option>
+
+        <div class="page-main__sort-product  page-main__sort-product--view">
+          <option value="Brands">Brands</option>
+          <option value="Buffalo Decollete">Buffalo Decollete</option>
+          <option value="Even$Odd">Even$Odd</option>
+          <option value="Prada">Prada</option>
+          <option value="Casadei">Casadei</option>
+          <option value="Mellow Yellow">Mellow Yellow</option>
+
+        </div>
       </select>
 
       <select class="page-main__sort-product  page-main__sort-product--categories" type="text">

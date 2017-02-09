@@ -6,7 +6,7 @@
 }
 
 .slider__picture {
-  height: 460px;
+  min-height: 460px;
   margin: 0 auto;
   background-image: url("../img/slider@1x.png");
   background-repeat: no-repeat;
@@ -18,10 +18,6 @@
   width: 400px;
   margin-left: 1000px;
   padding-top: 50px;
-
-}
-
-.slider__picture-cost {
 
 }
 
