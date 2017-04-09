@@ -7,16 +7,36 @@
 
 }
 
+.schedule__month--current-month {
+  margin: 40px 0 0 0;
+  padding-left: 245px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-top: 3px #dbd2d2 solid;
+}
+
+.schedule__month--current-month span {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  top: -25px;
+  background-color: #fff;
+}
+
+
+
 .schedule__day-wrapper {
   display: flex;
 }
 
 .schedule__date {
-  width: 50px;
+  width: 47px;
   background: #dbd2d2;
   margin-right: 20px;
   margin-bottom: 15px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -36,6 +56,14 @@
 }
 
 .schedule__info:nth-child(3) {
+  margin-right: 0;
+}
+
+.schedule__info:nth-child(6) {
+  margin-right: 0;
+}
+
+.schedule__info:nth-child(9) {
   margin-right: 0;
 }
 
@@ -59,6 +87,7 @@
 }
 
 .schedule__info-lecture-name {
+  display: block;
   padding-bottom: 5px;
 }
 
@@ -71,16 +100,17 @@
 }
 
 .schedule__info--interfaces-school {
-  background: #efb1b1;
+  background: #ef9594;
 }
 
 .schedule__info--mobile-school {
-  background: #be9dcc;
+  background: #ccb3d6;
 }
 
 .schedule__info--mobile-design-school {
-  background: #ebefb1;
+  background: #efe792;
 }
 
-
-
+.schedule__info--lecture-completed {
+ opacity: 0.4;
+}
