@@ -39,12 +39,15 @@
 }
 
 .schedule--conventions {
-  width: 220px;
-  height: 40px;
+  width: 150px;
+  height: 50px;
   text-align: center;
   padding-top: 10px;
-  font-size: 14px;
   border-radius: 5px;
+
+  &:last-child {
+    padding-top: 17px;
+  }
 }
 
 .schedule--conventions--red {
@@ -59,11 +62,15 @@
   background: #efee97;
 }
 
+.schedule--conventions--gray {
+  background: #dbd2d2;
+}
+
 .schedule__month--current-month {
   margin: 40px 0 0 0;
-  padding-left: 250px;
   font-size: 25px;
   font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   border-top: 3px #dbd2d2 solid;
@@ -96,8 +103,9 @@
 }
 
 .schedule__info {
+  position: relative;
   width: 220px;
-  height: 135px;
+  height: 150px;
   margin-right: 15px;
   margin-bottom: 15px;
   padding: 10px;
@@ -170,13 +178,37 @@
   background: #efee97;
 }
 
+.schedule__info--not-completed {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 150px;
+  padding: 10px;
+  background: #000;
+  opacity: 0.8;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 .schedule__info--lecture-completed {
-  opacity: 0.4;
 
-  &:hover {
+  .schedule__info--not-completed {
+    display: block;
+  }
 
+  &:hover .schedule__info--not-completed {
+    opacity: 0.8;
   }
 }
+
+.schedule__info--not-completed-speaker {
+  display: block;
+  padding-top: 25px;
+}
+
 
 @media (max-width: 767px) {
   .schedule {
@@ -209,6 +241,7 @@
   .schedule--conventions {
     width: 320px;
     margin-bottom: 15px;
+    padding-top: 18px;
 
     &:last-child {
       margin-bottom: 0;
@@ -217,7 +250,6 @@
 
   .schedule__month--current-month {
     padding: 0;
-    text-align: center;
   }
 
   .schedule__day-wrapper {
@@ -265,6 +297,12 @@
   }
 
   .schedule__info-speaker {
+    font-size: 14px;
+  }
+
+  .schedule__info--not-completed {
+    width: 320px;
+    height: 175px;
     font-size: 14px;
   }
 
