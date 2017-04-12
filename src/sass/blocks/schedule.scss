@@ -3,13 +3,65 @@
   margin: 0 auto;
 }
 
-.schedule__month {
+.schedule__title {
+  margin: 50px 0 0 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
 
+.schedule__sort {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.schedule__sort-lecture {
+  width: 220px;
+  height: 40px;
+  background: #dbd2d2;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.schedule--conventions-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.schedule--conventions {
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.schedule--conventions--red {
+  background: #ef9594;
+}
+
+.schedule--conventions--violet {
+  background: #ccb3d6;
+}
+
+.schedule--conventions--yellow {
+  background: #efee97;
 }
 
 .schedule__month--current-month {
   margin: 40px 0 0 0;
-  padding-left: 245px;
+  padding-left: 250px;
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
@@ -24,8 +76,6 @@
   top: -25px;
   background-color: #fff;
 }
-
-
 
 .schedule__day-wrapper {
   display: flex;
@@ -53,6 +103,10 @@
   padding: 10px;
   background: #dbd2d2;
   border-radius: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .schedule__info:nth-child(3) {
@@ -68,6 +122,7 @@
 }
 
 .schedule__info-time {
+  display: block;
   float: left;
   font-size: 14px;
   padding-bottom: 5px;
@@ -75,12 +130,14 @@
 }
 
 .schedule__info-lecture-hall {
+  display: block;
   float: right;
   padding-bottom: 5px;
   font-size: 15px;
 }
 
 .schedule__info-school {
+  display: block;
   clear: both;
   padding-bottom: 5px;
   font-weight: bold;
@@ -89,9 +146,11 @@
 .schedule__info-lecture-name {
   display: block;
   padding-bottom: 5px;
+
 }
 
 .schedule__info-speaker {
+  display: block;
   padding-bottom: 5px;
 }
 
@@ -108,9 +167,105 @@
 }
 
 .schedule__info--mobile-design-school {
-  background: #efe792;
+  background: #efee97;
 }
 
 .schedule__info--lecture-completed {
- opacity: 0.4;
+  opacity: 0.4;
+
+  &:hover {
+
+  }
+}
+
+@media (max-width: 767px) {
+  .schedule {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .schedule__title {
+    font-size: 35px;
+  }
+
+  .schedule__sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  .schedule__sort-lecture {
+    width: 320px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .schedule--conventions-wrapper {
+    flex-direction: column;
+  }
+
+  .schedule--conventions {
+    width: 320px;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .schedule__month--current-month {
+    padding: 0;
+    text-align: center;
+  }
+
+  .schedule__day-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .schedule__date {
+    width: 320px;
+    height: 50px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .schedule__day {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .schedule__info {
+    width: 320px;
+    height: 175px;
+    margin-right: 0;
+  }
+
+  .schedule__info-time {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .schedule__info-lecture-hall {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .schedule__info-school {
+    font-size: 14px;
+  }
+
+  .schedule__info-lecture-name {
+    font-size: 14px;
+  }
+
+  .schedule__info-speaker {
+    font-size: 14px;
+  }
+
 }

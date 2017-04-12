@@ -11,6 +11,62 @@
 <body>
 <main>
   <div class="schedule">
+    <h1 class="schedule__title">Расписание лекций проекта «Мобилизация»</h1>
+
+    <div class="schedule__sort">
+      <select class="schedule__sort-lecture" type="text">
+        <option value="Все школы">Все школы</option>
+        <option value="Школа разработки интерфейсов">Школа разработки интерфейсов</option>
+        <option value="Школа мобильной разработки">Школа мобильной разработки</option>
+        <option value="Школа мобильного дизайна">Школа мобильного дизайна</option>
+      </select>
+
+      <select class="schedule__sort-lecture" type="text">
+        <option value="Все докладчики">Все докладчики</option>
+        <option value="Дмитрий Душкин">Дмитрий Душкин</option>
+        <option value="Максим Васильев">Максим Васильев</option>
+        <option value="Сергей Бережной">Сергей Бережной</option>
+        <option value="Андрей Морозов">Андрей Морозов</option>
+        <option value="Иван Карев">Иван Карев</option>
+        <option value="Прокопюк Андрей">Прокопюк Андрей</option>
+        <option value="Эдуард Мацуков">Эдуард Мацуков</option>
+        <option value="Дмитрий Складнов">Дмитрий Складнов</option>
+        <option value="Роман Григорьев">Роман Григорьев</option>
+        <option value="Алексей Щербинин">Алексей Щербинин</option>
+        <option value="Алексей Макаров">Алексей Макаров</option>
+        <option value="Владимир Тагаков">Владимир Тагаков</option>
+        <option value="Максим Хромцов">Максим Хромцов</option>
+        <option value="Денис Загаевский">Денис Загаевский</option>
+        <option value="Дмитрий Попов">Дмитрий Попов</option>
+        <option value="Илья Сергеев">Илья Сергеев</option>
+        <option value="Антон Тен">Антон Тен</option>
+        <option value="Васюнин Николай">Васюнин Николай</option>
+        <option value="Сергей Томилов">Сергей Томилов</option>
+        <option value="Дарья Старицына">Дарья Старицына</option>
+        <option value="Rijshouwer Krijn">Rijshouwer Krijn</option>
+        <option value="Treub Jonas">Treub Jonas</option>
+        <option value="Андрей Гевак">Андрей Гевак</option>
+        <option value="Кондратьев Александр">Кондратьев Александр</option>
+        <option value="Юрий Подорожный">Юрий Подорожный</option>
+        <option value="Дмитрий Моруз">Дмитрий Моруз</option>
+        <option value="Ждан Филиппов">Ждан Филиппов</option>
+      </select>
+
+      <select class="schedule__sort-lecture" type="text">
+        <option value="Все даты">Все даты</option>
+        <option value="Октябрь">Октябрь</option>
+        <option value="Ноябрь">Ноябрь</option>
+        <option value="Декабрь">Декабрь</option>
+      </select>
+    </div>
+
+
+    <div class="schedule--conventions-wrapper">
+      <div class="schedule--conventions  schedule--conventions--red">Школа разработки интерфейсов</div>
+      <div class="schedule--conventions  schedule--conventions--violet">Школа мобильной разработки</div>
+      <div class="schedule--conventions  schedule--conventions--yellow">Школа мобильного дизайна</div>
+    </div>
+
     <div class="schedule__month">
       <div class="schedule__month  schedule__month--current-month">
         <span>Октябрь 2017</span>
@@ -23,7 +79,7 @@
           <div class="schedule__info  schedule__info--all-school">
             <span class="schedule__info-time">10.00-10.30</span>
             <span class="schedule__info-lecture-hall">Аудитория №1</span>
-            <span class="schedule__info-school">Школа разработки интерфейсов/Школа мобильной разработки/Школа мобильного дизайна</span>
+            <span class="schedule__info-school">Школа разработки интерфейсов/<br>Школа мобильной разработки/<br>Школа мобильного дизайна</span>
             <span class="schedule__info-lecture-name">Вводная лекция</span>
             <a href="#" class="schedule__info-speaker">Дмитрий Душкин/Яндекс</a>
           </div>
@@ -55,7 +111,7 @@
             <span class="schedule__info-lecture-hall">Аудитория №2</span>
             <span class="schedule__info-school">Школа мобильной разработки</span>
             <span class="schedule__info-lecture-name">Лекция 1. Java Blitz (Часть 1)</span>
-            <a class="schedule__info-speaker">Эдуард Мацуков/Яндекс</a>
+            <a href="#" class="schedule__info-speaker">Эдуард Мацуков/Яндекс</a>
           </div>
 
           <div class="schedule__info  schedule__info--mobile-school">
