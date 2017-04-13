@@ -1,5 +1,5 @@
 .schedule {
-  width: 760px;
+  width: 865px;
   margin: 0 auto;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .schedule__sort-lecture {
-  width: 220px;
+  width: 255px;
   height: 40px;
   background: #dbd2d2;
   border: none;
@@ -32,13 +32,19 @@
   }
 }
 
-.schedule--conventions-wrapper {
+.schedule__conventions-title {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.schedule__conventions-wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.schedule--conventions {
+.schedule__conventions {
   width: 150px;
   height: 50px;
   text-align: center;
@@ -50,19 +56,19 @@
   }
 }
 
-.schedule--conventions--red {
+.schedule__conventions--red {
   background: #ef9594;
 }
 
-.schedule--conventions--violet {
+.schedule__conventions--violet {
   background: #ccb3d6;
 }
 
-.schedule--conventions--yellow {
+.schedule__conventions--yellow {
   background: #efee97;
 }
 
-.schedule--conventions--gray {
+.schedule__conventions--gray {
   background: #dbd2d2;
 }
 
@@ -104,14 +110,14 @@
 
 .schedule__info {
   position: relative;
-  width: 220px;
-  height: 150px;
+  width: 255px;
+  height: 155px;
   margin-right: 15px;
   margin-bottom: 15px;
   padding: 10px;
   background: #dbd2d2;
   border-radius: 5px;
-  box-shadow: 0 2px 17px -3px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 17px -3px rgba(0, 0, 0, 0.6);
 
   &:hover {
     opacity: 0.8;
@@ -184,8 +190,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 220px;
-  height: 150px;
+  width: 255px;
+  height: 155px;
   padding: 10px;
   background: #000;
   opacity: 0.8;
@@ -235,11 +241,11 @@
     margin-bottom: 15px;
   }
 
-  .schedule--conventions-wrapper {
+  .schedule__conventions-wrapper {
     flex-direction: column;
   }
 
-  .schedule--conventions {
+  .schedule__conventions {
     width: 320px;
     margin-bottom: 15px;
     padding-top: 18px;
