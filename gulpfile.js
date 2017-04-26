@@ -74,7 +74,7 @@ gulp.task('img', function () {
     .pipe(gulp.dest(dirs.build + '/img'));                  // записываем файлы (путь из константы)
 });
 
-// ЗАДАЧА: Копирование изображений
+// ЗАДАЧА: Копирование шрифтов
 gulp.task('copy:fonts', function () {
   return gulp.src([
       dirs.source + '/fonts/*.{woff,woff2}',                // какие файлы обрабатывать (путь из константы, маска имени, много расширений)

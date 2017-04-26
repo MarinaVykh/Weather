@@ -1,26 +1,15 @@
 @font-face {
-  font-family: 'Aller';
-  src: url('../fonts/aller_rg-webfont.woff2') format('woff2'),
-  url('../fonts/aller_rg-webfont.woff') format('woff');
+  font-family: 'roboto_condensedregular';
+  src: url('../fonts/robotocondensedregular-webfont.woff2') format('woff2'),
+  url('../fonts/robotocondensedregular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'Aller';
-  src: url('../fonts/aller_bd-webfont.woff2') format('woff2'),
-  url('../fonts/aller_bd-webfont.woff') format('woff');
+  font-family: 'roboto_condensedbold';
+  src: url('../fonts/robotocondensedbold-webfont.woff2') format('woff2'),
+  url('../fonts/robotocondensedbold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'Aller';
-  src: url('../fonts/aller_lt-webfont.woff2') format('woff2'),
-  url('../fonts/aller_lt-webfont.woff') format('woff');
-  font-weight: lighter;
-  font-style: normal;
-
 }
