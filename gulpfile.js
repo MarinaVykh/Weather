@@ -141,10 +141,10 @@ gulp.task('clean', function () {
 gulp.task('js', function () {
   return gulp.src([
     // список обрабатываемых файлов
-    dirs.source + '/js/javascript.js'
+    dirs.source + '/js/main.js'
   ])
     .pipe(plumber({errorHandler: onError}))
-    .pipe(concat('javascript.min.js'))
+    .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(dirs.build + '/js'));
 });
